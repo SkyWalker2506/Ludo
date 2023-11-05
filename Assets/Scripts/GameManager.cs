@@ -5,14 +5,15 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private UIManager uiManager;
     [SerializeField] private LudoBoardManager boardManager;
+    [SerializeField] private float moveDuration = 1;
     private int lastRolledNumber;
-    private float moveInterval = 1;
+    
     private void OnEnable()
     {
         uiManager?.OnRollDice?.AddListener(OnRollDice);
+        uiManager?.OnResetChip?.AddListener(OnResetChip);
         boardManager.OnChipClick += (c)=>OnChipClicked(c);
     }
-
 
     private void OnDisable()
     {
@@ -22,23 +23,37 @@ public class GameManager : MonoBehaviour
 
     async void OnRollDice()
     {
+        uiManager.ToggleDiceButton(false);
         uiManager.ImitateDiceRoll();
         lastRolledNumber = await RandomNumberFetcher.FetchRandomNumber();
         uiManager.ShowDice(lastRolledNumber);
-        uiManager.ToggleDiceButton(false);
+    }
+    
+    private void OnResetChip()
+    {
+        var chip =  boardManager.GetCurrentChip();
+        chip.SetStartIndex();
+        chip.Move(boardManager.GetTileData(chip.CurrentIndex), moveDuration);
     }
     
     private async UniTask OnChipClicked(Chip chip)
     {
-        int moveCount = 0;
-        Debug.Log("OnChipClicked");
+        if (!chip.IsInteractable)
+        {
+            return;
+        }
+        chip.IsInteractable = false;
 
+        int moveCount = 0;
         while (moveCount < lastRolledNumber)
         {
-            await UniTask.WaitForSeconds(moveInterval);
-            chip.Move(boardManager.GetTileData(chip.CurrentIndex+1), moveInterval);
+            chip.Move(boardManager.GetTileData(chip.CurrentIndex+1), moveDuration);
             moveCount++;
+            await UniTask.WaitForSeconds(moveDuration);
         }
+
+        lastRolledNumber = 0;
+        chip.IsInteractable = true;
         uiManager.ToggleDiceButton(true);
     }
 }

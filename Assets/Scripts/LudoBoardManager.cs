@@ -6,6 +6,7 @@ public class LudoBoardManager : MonoBehaviour
     [SerializeField] private LudoBoard ludoBoard;
     [SerializeField] private Chip chip;
     public Action<Chip> OnChipClick;
+    
     private void Awake()
     {
         MoveChipToInitialPosition(chip);
@@ -29,9 +30,7 @@ public class LudoBoardManager : MonoBehaviour
     private void OnChipClicked()
     {
         OnChipClick?.Invoke(chip);
-        Debug.Log("OnChipClicked");
     }
-
 
     public Vector3 GetPosition(int index)
     {
@@ -41,5 +40,10 @@ public class LudoBoardManager : MonoBehaviour
     public TileData GetTileData(int index)
     {
         return ludoBoard.GetTileData(index);
+    }
+
+    public Chip GetCurrentChip()
+    {
+        return chip;
     }
 }
