@@ -1,7 +1,12 @@
+using System;
+using System.Globalization;
 using System.Net;
 using System.IO;
+using System.Text;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using Object = UnityEngine.Object;
+using Random = UnityEngine.Random;
 
 public class RandomNumberFetcher
 {
@@ -22,11 +27,26 @@ public class RandomNumberFetcher
         else
         {
             string url = RANDOM_ORG_API_URL + "&apiKey=" + API_KEY;
+            HttpWebResponse response = null;
+            StreamReader sr = null;
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            HttpWebResponse response = (HttpWebResponse)await request.GetResponseAsync();
-            StreamReader reader = new StreamReader(response.GetResponseStream());
-            string responseText = reader.ReadToEnd();
-            randomNumber = int.Parse(responseText);
+            try
+            {
+                response = (HttpWebResponse)await request.GetResponseAsync();
+                Stream s = response.GetResponseStream();
+                sr = new StreamReader(s, Encoding.UTF8);
+                           string responseText = sr.ReadToEnd();
+                 randomNumber = int.Parse(responseText);
+            }
+            finally
+            {
+                request.Abort(); 
+                if (sr != null)
+                    sr.Dispose();
+                if (response != null)
+                    response.Close();
+            }
+ 
         }
 
         return randomNumber;
