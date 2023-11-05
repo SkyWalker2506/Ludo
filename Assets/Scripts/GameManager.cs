@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
 
         lastRolledNumber = 0;
         chip.IsInteractable = true;
+        uiManager.ShowDice(0);
         uiManager.ToggleDiceButton(true);
     }
 }

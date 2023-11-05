@@ -1,19 +1,22 @@
 using Cysharp.Threading.Tasks;
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DiceController : MonoBehaviour
 {
-    [SerializeField] private TMP_Text diceText;
+    [SerializeField] private Image diceImage;
+    [SerializeField] private Sprite defaultSprite;
+    [SerializeField] private Sprite[] diceSprites;
     private bool immitateDiceRoll;
     private int min = 1, max = 6, previousValue, currentValue;
     private float changeInterval = .2f;
-
+    
     public async UniTaskVoid ImitateDiceRoll()
     {
         immitateDiceRoll = true;
         previousValue = 0;
         currentValue = 0;
+        SetDiceValue(0);
         int value;
         while (immitateDiceRoll)
         {
@@ -45,21 +48,20 @@ public class DiceController : MonoBehaviour
             await UniTask.WaitForSeconds(changeInterval);
         }
         SetDiceValue(number);
-        diceText.SetText(currentValue.ToString());
     }
     
     void SetDiceValue(int value)
     {
-        if (value >= min&&value <= max)
+        if (value >= min && value <= max)
         {
             previousValue = currentValue;
             currentValue = value;
-            diceText.SetText(currentValue.ToString());   
+            diceImage.sprite = diceSprites[value - min];
         }
         else
         {
-            diceText.SetText("?");   
+            diceImage.sprite = defaultSprite;
         }
-
     }
+    
 }
