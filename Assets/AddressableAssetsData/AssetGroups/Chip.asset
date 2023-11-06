@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Chip
+  m_EditorClassIdentifier: 
+  m_GroupName: Chip
+  m_Data:
+    m_SerializedData: []
+  m_GUID: d83e0e63b65cf47538858482277ef01b
+  m_SerializeEntries:
+  - m_GUID: c69de49bef05d45e2a6cd213b5b8d508
+    m_Address: Assets/Sprites/Chip/pngegg.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 430728505c5d74807890cd6db5669955, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e4f90cf87eb1d4eabbbc7968eaf0c48a, type: 2}
+    - {fileID: 11400000, guid: bcb15b2c9df5645458932be1f3005a1a, type: 2}

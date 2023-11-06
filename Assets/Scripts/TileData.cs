@@ -1,15 +1,19 @@
 using System;
 using UnityEngine;
 
-[Serializable]
-public struct TileData
+namespace Game.LudoBoard
 {
-    public float X;
-    public float Y;
-    public int Index;
-
-    public Vector3 GetPosition()
+    [Serializable]
+    public struct TileData
     {
-       return new Vector3(X, Y, 0); 
+        public float X;
+        public float Y;
+        public int Index;
+
+        public Vector3 GetPosition()
+        {
+           return new Vector3(X, Y, 0); 
+        }
     }
 }
+

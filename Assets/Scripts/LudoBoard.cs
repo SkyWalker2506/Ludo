@@ -1,27 +1,29 @@
-using System;
 using UnityEngine;
 
-public class LudoBoard : MonoBehaviour
+namespace Game.LudoBoard
 {
-    [SerializeField] private TileData[] tileDatas;
-
-    private void Awake()
+    public class LudoBoard : MonoBehaviour
     {
-        for (int i = 0; i < tileDatas.Length; i++)
+        [SerializeField] private TileData[] tileDatas;
+
+        private void Awake()
         {
-            tileDatas[i].Index = i;
+            for (int i = 0; i < tileDatas.Length; i++)
+            {
+                tileDatas[i].Index = i;
+            }
         }
-    }
 
-    public Vector3 GetTilePosition(int index)
-    {
-        index %= tileDatas.Length;
-        return tileDatas[index].GetPosition();
-    }
+        public Vector3 GetTilePosition(int index)
+        {
+            index %= tileDatas.Length;
+            return tileDatas[index].GetPosition();
+        }
 
-    public TileData GetTileData(int index)
-    {
-        index %= tileDatas.Length;
-        return tileDatas[index];
+        public TileData GetTileData(int index)
+        {
+            index %= tileDatas.Length;
+            return tileDatas[index];
+        }
     }
 }

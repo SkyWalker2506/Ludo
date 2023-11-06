@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e00c69224c78640a3a2c84deecb78246, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -89,6 +89,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8348b09558454f58af0a156308d38515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSpriteReference:
+    m_AssetGUID: e00c69224c78640a3a2c84deecb78246
+    m_SubObjectName: rolling-dice-cup
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_EditorAssetChanged: 1
+  diceSpritesReference:
+  - m_AssetGUID: 07ef0b785825a4ef3aea79e48a40d560
+    m_SubObjectName: dice-six-faces-one
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: 9c646cda6714949b1aac54a0a52edc24
+    m_SubObjectName: dice-six-faces-two
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: cfd27580e72224f7e889c20ba93625fd
+    m_SubObjectName: dice-six-faces-three
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: fc6bd4fc60ed147b0874aff676f41f98
+    m_SubObjectName: dice-six-faces-four
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: f65f291a833ed4c9e8c432b58545ff9f
+    m_SubObjectName: dice-six-faces-five
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: 867af3dd6da934885a75bdb7e73b4fea
+    m_SubObjectName: dice-six-faces-six
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_EditorAssetChanged: 1
   diceImage: {fileID: 5436489833331465397}
   defaultSprite: {fileID: 21300000, guid: e00c69224c78640a3a2c84deecb78246, type: 3}
   diceSprites:

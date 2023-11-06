@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2de9070-e32e-4cf2-9cc3-e3c5d6d48275" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ludo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ludo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dice.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Dice.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Chip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Chip.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DiceController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DiceController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LudoBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LudoBoard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LudoBoardManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LudoBoardManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RandomNumberFetcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomNumberFetcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Team.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Team.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,26 +43,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/musabkara/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
-      "/Users/musabkara/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
-      "/Users/musabkara/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/musabkara/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/musabkara/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/musabkara/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/MacOS/Unity" />
@@ -80,10 +90,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="80551">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="81403">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="80551" />
+      <option name="pid" value="81403" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -118,94 +128,94 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/DiceController.cs</url>
-          <line>26</line>
+          <line>30</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/DiceController.cs" initialLine="23" containingFunctionPresentation="Method 'ImitateDiceRoll'">
             <startOffsets>
-              <option value="770" />
+              <option value="1217" />
             </startOffsets>
             <endOffsets>
-              <option value="771" />
+              <option value="1218" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/DiceController.cs</url>
-          <line>28</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/DiceController.cs" initialLine="25" containingFunctionPresentation="Method 'ImitateDiceRoll'">
-            <startOffsets>
-              <option value="817" />
-            </startOffsets>
-            <endOffsets>
-              <option value="837" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/DiceController.cs</url>
-          <line>35</line>
+          <line>33</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/DiceController.cs" initialLine="32" containingFunctionPresentation="Method 'ShowDice'">
             <startOffsets>
-              <option value="977" />
+              <option value="1424" />
             </startOffsets>
             <endOffsets>
-              <option value="1002" />
+              <option value="1449" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs</url>
-          <line>28</line>
+          <line>24</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" initialLine="22" containingFunctionPresentation="Method 'OnRollDice'">
             <startOffsets>
-              <option value="866" />
+              <option value="1173" />
             </startOffsets>
             <endOffsets>
-              <option value="903" />
+              <option value="1210" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/DiceController.cs</url>
-          <line>54</line>
+          <line>53</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/DiceController.cs" initialLine="52" containingFunctionPresentation="Method 'SetDiceValue'">
             <startOffsets>
-              <option value="1424" />
+              <option value="1871" />
             </startOffsets>
             <endOffsets>
-              <option value="1457" />
+              <option value="1904" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/DiceController.cs</url>
-          <line>62</line>
+          <line>73</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/DiceController.cs" initialLine="60" containingFunctionPresentation="Method 'SetDiceValue'">
             <startOffsets>
-              <option value="1646" />
+              <option value="2070" />
             </startOffsets>
             <endOffsets>
-              <option value="1650" />
+              <option value="2072" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs</url>
-          <line>47</line>
+          <line>30</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" initialLine="35" containingFunctionPresentation="Method 'OnChipClicked'">
             <startOffsets>
-              <option value="1326" />
+              <option value="1686" />
             </startOffsets>
             <endOffsets>
-              <option value="1362" />
+              <option value="1722" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs</url>
+          <line>64</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" initialLine="64" containingFunctionPresentation="Method 'OnChipClicked'">
+            <startOffsets>
+              <option value="1970" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2041" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

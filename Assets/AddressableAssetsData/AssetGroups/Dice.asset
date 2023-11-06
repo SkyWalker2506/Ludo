@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Dice
+  m_EditorClassIdentifier: 
+  m_GroupName: Dice
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1ccc13900e0e3462da28a73770113daa
+  m_SerializeEntries:
+  - m_GUID: 4d24c806e26374722a70ca53119275cb
+    m_Address: Assets/Sprites/Dice
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 430728505c5d74807890cd6db5669955, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6d4e095341dcd40ffb9e517e318ee386, type: 2}
+    - {fileID: 11400000, guid: 0302ee058083a444a873bc85e72896db, type: 2}
