@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiManager: {fileID: 0}
   boardManager: {fileID: 0}
-  moveDuration: 0.5
+  moveDuration: 0.35
